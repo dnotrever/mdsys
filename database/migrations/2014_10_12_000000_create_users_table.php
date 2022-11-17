@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('sector');
             $table->boolean('actived')->default(true);
+            $table->integer('access_level')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });
