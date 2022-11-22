@@ -17,7 +17,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-        return view('auth.login');
+        if (auth()->user()) {
+            return redirect('dashboard');
+        } else {
+            return view('auth.login');
+        }
     }
 
     /**

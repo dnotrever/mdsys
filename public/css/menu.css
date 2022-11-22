@@ -1,0 +1,152 @@
+
+.nav-item {
+    margin: 0 .2rem;
+    width: 7rem;
+    text-align: center;
+}
+
+.nav-link {
+    color: #222;
+}
+
+.clinic-icon {
+    width: 4rem;
+}
+
+.dropdown-item {
+    padding: .7rem 1rem;
+}
+
+
+/* Clinic Menu */
+
+#clinic-menu-group .nav-item:hover {
+    background-color: #63B8FF;
+}
+
+#clinic-menu-group .show {
+    background-color: #00B2EE;
+}
+
+#clinic-menu-group .nav-link {
+    padding: 1.5rem 1rem;
+}
+
+#clinic-menu-group .dropdown-menu {
+    background-color: #CFCFCF;
+}
+
+#clinic-menu-group .dropdown-menu:before {
+    position: absolute;
+    top: -11px;
+    display: inline-block;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ccc;
+    border-left: 15px solid transparent;
+    border-bottom-color: #CFCFCF;
+    content: '';
+}
+
+#clinic-menu-group .dropdown-item:hover {
+    background-color: #B5B5B5;
+}
+
+#clinic-menu-group .dropdown-menu {
+    width: 19rem;
+}
+
+#clinic-menu-group .dropdown-menu:before {
+    right: 14.2rem;
+}
+
+#clinic-menu-group .clinic-icon .dropdown-menu:before {
+    right: 15.7rem;
+}
+
+
+/* User Menu */
+
+#user-menu-group .nav-item {
+    background-color: #7EC0EE;
+    width: 3rem;
+    margin: 0 1rem;
+    align-self: center;
+}
+
+#user-menu-group .nav-item:hover {
+    background-color: #6CA6CD;
+}
+
+#user-menu-group .show {
+    background-color: #00B2EE;
+}
+
+#user-menu-group .dropdown-menu {
+    background-color: #DDD;
+}
+
+#user-menu-group .dropdown-menu:before {
+    position: absolute;
+    top: -11px;
+    display: inline-block;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #ccc;
+    border-left: 15px solid transparent;
+    border-bottom-color: #DDD;
+    content: '';
+}
+
+#user-menu-group .dropdown-item:hover {
+    background-color: #B5B5B5;
+}
+
+#user-menu-group #menu-profile {
+    background-color: #AFEEEE;
+    border-radius: 0;
+    padding: 0 7.7rem;
+}
+
+#user-menu-group #menu-profile:hover {
+    background-color: #63B8FF;
+    border-radius: 0;
+}
+
+#user-menu-group #menu-profile .show {
+    border-radius: 0;
+}
+
+#user-menu-group #menu-profile .user-name {
+    padding: 0 1rem;
+    width: 15rem;
+}
+
+#user-menu-group #menu-profile .nav-link {
+    padding: 1.25rem .2rem;
+}
+
+#menu-profile .dropdown-menu {
+    width: 15.3rem;
+}
+
+#menu-profile .dropdown-menu:before {
+    border-bottom-color: transparent;
+}
+
+#menu-notifications .dropdown-menu,
+#menu-tasks .dropdown-menu {
+    width: 22rem;
+    height: 20rem;
+    margin-top: 1.2rem;
+}
+
+#menu-notifications .dropdown-menu:before,
+#menu-tasks .dropdown-menu:before {
+    right: .7%;
+}
+
+
+/* Offcanvas */
+
+#chat-users-panel {
+    width: 30rem;
+}
