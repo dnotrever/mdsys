@@ -4,7 +4,7 @@
 
     <div class="container-fluid" id="menu">
 
-        <a class="navbar-brand me-5 ms-3 p fs-3" href="/summary">
+        <a class="navbar-brand me-5 ms-3 p fs-3" href="/dashboard">
             <i class="fa-solid fa-house-chimney-medical me-1 text-primary"></i>
             <span class="fw-bold">MDSYS</span>
         </a>

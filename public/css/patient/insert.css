@@ -1,0 +1,92 @@
+
+.patient-insert {
+    padding: 3rem 15rem;
+}
+
+.patient-insert .row {
+    margin: 0;
+}
+
+.patient-insert button {
+    letter-spacing: .2rem;
+}
+
+.patient-insert textarea {
+    resize: none;
+}
+
+.patient-insert input[type='file'] {
+    display: none;
+}
+
+.patient-insert .form-photo label {
+    background-color: #DDD;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    padding: .5rem;
+    width: 16rem;
+}
+
+.patient-insert span {
+    padding: 0;
+    justify-content: center;
+    width: 2.2rem;
+}
+
+.img-wrapper {
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+.group-field {
+    background-color: #EEE;
+    border-radius: .7rem;
+    margin: .5rem;
+    padding: 0 1rem;
+}
+
+.subgroup-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.patient-insert-form * .form-label {
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+}
+
+.patient-insert-form * .form-control,
+.patient-insert-form * .form-select {
+    box-shadow: none;
+    letter-spacing: .1rem;
+}
+
+.w-xs {
+    width: 6rem;
+}
+
+.w-sm {
+    width: 10rem;
+}
+
+.w-md {
+    width: 14rem;
+}
+
+.w-lg {
+    width: 18rem;
+}
+
+.w-xl {
+    width: 22rem;
+}
+
+.w-xxl {
+    width: 30rem;
+}
