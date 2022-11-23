@@ -1,0 +1,31 @@
+/* Patient Aside */
+
+.patient-aside-menu {
+    background-color: #E0EEEE;
+    padding: 0;
+}
+
+.patient-aside-menu i {
+    color:cornflowerblue;
+    padding-left: .5rem;
+    width: 2.5rem;
+}
+
+.patient-aside-menu .nav-item {
+    margin: .5rem 0;
+    width: 100%;
+    text-align: left;
+}
+
+.patient-aside-menu .nav-item:hover {
+    background-color: #C1CDCD;
+}
+
+.patient-aside-menu .nav-link {
+    padding-left: 2rem;
+}
+
+.selected {
+    background-color: #CCC;
+    font-weight: 600;
+}

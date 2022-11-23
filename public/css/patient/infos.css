@@ -1,0 +1,107 @@
+
+.patient-infos {
+    padding: 3rem;
+}
+
+.patient-infos .row {
+    margin: 0;
+}
+
+.patient-infos button, 
+.patient-infos a {
+    letter-spacing: .2rem;
+}
+
+.patient-infos textarea {
+    resize: none;
+}
+
+.patient-infos img {
+    width: 75%;
+}
+
+.patient-infos input[type='file'] {
+    display: none;
+}
+
+.patient-infos .form-photo label {
+    background-color: #DDD;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    padding: .5rem;
+    width: 16rem;
+}
+
+.patient-infos span {
+    padding: 0;
+    justify-content: center;
+    width: 2.2rem;
+}
+
+.img-wrapper {
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+}
+
+.group-field {
+    background-color: #EEE;
+    border-radius: .7rem;
+    margin: .5rem;
+    padding: 0 1rem;
+}
+
+.subgroup-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.patient-infos-form * .form-label {
+    margin-bottom: .2rem;
+    margin-left: .2rem;
+}
+
+.patient-infos-form * .form-control,
+.patient-infos-form * .form-select,
+.patient-infos-form * .form-check-input {
+    box-shadow: none;
+    letter-spacing: .1rem;
+}
+
+.patient-infos-form .form-switch {
+    width: 5rem;
+}
+
+.patient-infos-form .form-check-input {
+    height: 2rem;
+    width: 4rem;
+}
+
+.w-xs {
+    width: 6rem;
+}
+
+.w-sm {
+    width: 10rem;
+}
+
+.w-md {
+    width: 14rem;
+}
+
+.w-lg {
+    width: 18rem;
+}
+
+.w-xl {
+    width: 22rem;
+}
+
+.w-xxl {
+    width: 30rem;
+}

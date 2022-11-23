@@ -72,4 +72,11 @@ class PatientController extends Controller
 
     }
 
+    public function show_one($id)
+    {
+        $patient = Patient::findOrFail($id);
+        $address = Address::findOrFail($id);
+        return view('patient.infos', ['patient' => $patient, 'address' => $address]);
+    }
+
 }

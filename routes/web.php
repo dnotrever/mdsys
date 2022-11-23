@@ -24,13 +24,15 @@ Route::middleware('auth', 'verified')->group(function () {
 
     Route::get('/dashboard', function () {
         return view('dashboard');
-    })->name('dashboard');
+    });
 
     Route::get('/patient/insert', function () {
         return view('patient.insert');
     });
 
     Route::post('/patient/insert', [PatientController::class, 'store']);
+
+    Route::get('/patient/{id}', [PatientController::class, 'show_one']);
     
 });
 
