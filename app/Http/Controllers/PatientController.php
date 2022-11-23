@@ -72,7 +72,7 @@ class PatientController extends Controller
 
     }
 
-    public function show_one($id)
+    public function show($id)
     {
         $patient = Patient::findOrFail($id);
         $address = Address::findOrFail($id);
@@ -126,6 +126,25 @@ class PatientController extends Controller
         $patient_page = '/patient' . '/' . $request->id;
 
         return redirect($patient_page);
+
+    }
+
+    public function search()
+    {
+
+        $search = request('search');
+
+        if ($search) {
+
+            $patients = Patient::where([
+                ['name', 'like', '%'.$search.'%']
+            ])->get();
+
+        } else {
+            $patients = Patient::all();
+        }
+
+        return view('patient.search', ['patients' => $patients, 'search' => $search]);
 
     }
 

@@ -1,0 +1,74 @@
+.patients-search {
+    padding: 3rem 25rem;
+}
+
+.patients-search a, tbody td {
+    letter-spacing: .1rem;
+}
+
+.patients-search .btn {
+    padding: .5rem 1rem;
+}
+
+.search-title h2 {
+    margin: 0;
+}
+
+.search-patient {
+    margin: 2rem 0;
+}
+
+.search-patient .input-group {
+    width: 35%;
+}
+
+.search-patient .input-group .form-control {
+    box-shadow: none;
+    padding: .5rem 1rem;
+    letter-spacing: .1rem;
+}
+
+.search-table table {
+    background-color: #EEE;
+    border-collapse: collapse;
+    border-radius: 1rem 1rem .5rem .5rem;
+    overflow: hidden;
+}
+
+.search-table table td {
+    padding: 1rem 0;
+}
+
+.search-table thead {
+    background-color: lightskyblue;
+}
+
+.search-table thead th {
+    padding: .5rem 1rem;
+}
+
+.search-table tbody td {
+    padding: .5rem;
+}
+
+.search-table .icon {
+    padding-right: 1.2rem;
+}
+
+.search-table .icon i {
+    color: #FFF;
+}
+
+.search-table .icon a, 
+.search-table .icon button {
+    font-size: .8rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-table p {
+    font-size: 1.3rem;
+}

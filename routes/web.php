@@ -30,11 +30,17 @@ Route::middleware('auth', 'verified')->group(function () {
         return view('patient.insert');
     });
 
+    Route::get('/patient/search', function () {
+        return view('patient.search');
+    });
+
     Route::post('/patient/insert', [PatientController::class, 'store']);
 
-    Route::get('/patient/{id}', [PatientController::class, 'show_one']);
+    Route::get('/patient/{id}', [PatientController::class, 'show']);
 
     Route::put('/patient/update/{id}', [PatientController::class, 'update']);
+
+    Route::get('/patient/search', [PatientController::class, 'search']);
     
 });
 
