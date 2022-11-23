@@ -79,4 +79,54 @@ class PatientController extends Controller
         return view('patient.infos', ['patient' => $patient, 'address' => $address]);
     }
 
+    public function update(Request $request)
+    {
+
+        $request->input('actived') ? $actived = 1 : $actived = 0;
+
+        $imageName = PatientController::getPhoto($request);
+
+        $patient_data = [
+            'name' => $request->name,
+            'birth' => $request->birth,
+            'cpf' => $request->cpf,
+            'rg' => $request->rg,
+            'gender' => $request->gender,
+            'height' => $request->height,
+            'weight' => $request->weight,
+            'marital_status' => $request->marital_status,
+            'schooling' => $request->schooling,
+            'profession' => $request->profession,
+            'nationality' => $request->nationality,
+            'naturalness' => $request->naturalness,
+            'phone' => $request->phone,
+            'cellphone' => $request->cellphone,
+            'whatsapp' => $request->whatsapp,
+            'email' => $request->email,
+            'notes' => $request->notes,
+            'actived' => $actived,
+            'photo' => $imageName,
+        ];
+
+        Patient::findOrFail($request->id)->update($patient_data);
+
+        $address_data = [
+            'cep' => $request->cep,
+            'street' => $request->street,
+            'home_number' => $request->home_number,
+            'complement' => $request->complement,
+            'district' => $request->district,
+            'city' => $request->city,
+            'state' => $request->state,
+            'country' => $request->country,
+        ];
+
+        Address::findOrFail($request->id)->update($address_data);
+
+        $patient_page = '/patient' . '/' . $request->id;
+
+        return redirect($patient_page);
+
+    }
+
 }

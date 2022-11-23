@@ -33,6 +33,8 @@ Route::middleware('auth', 'verified')->group(function () {
     Route::post('/patient/insert', [PatientController::class, 'store']);
 
     Route::get('/patient/{id}', [PatientController::class, 'show_one']);
+
+    Route::put('/patient/update/{id}', [PatientController::class, 'update']);
     
 });
 

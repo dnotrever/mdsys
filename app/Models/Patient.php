@@ -9,6 +9,8 @@ class Patient extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function address()
     {
         return $this->hasOne(Address::class, 'id_patient');
