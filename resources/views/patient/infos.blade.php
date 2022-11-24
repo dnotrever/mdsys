@@ -24,7 +24,14 @@
                     <div class="d-flex p-0 mb-4">
 
                         <h3 class="align-self-center m-0">
-                            {{ $patient->id }} – {{ $patient->name }}
+                            {{ $patient->id }} – {{ $patient->name }} (
+                                {{
+                                    date_diff(
+                                        date_create(date('d-m-Y', strtotime($patient->birth))),
+                                        date_create(date('Y-m-d'))
+                                    )->format('%y')
+                                }}
+                            anos )
                         </h3>
 
                         <div class="form-check form-switch m-0 ms-auto me-3">
