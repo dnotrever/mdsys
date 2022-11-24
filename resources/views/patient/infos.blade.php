@@ -315,11 +315,14 @@
         const infos = document.querySelector('#patient-infos')
         infos.className += ' selected'
 
+        // - - -  - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - 
+
         function justNumbers(info, max) {
             info.setAttribute('maxlength', max);
             info.value = info.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')
         }
 
+        // - - -  - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - 
 
         function optionSelected(tag, info) {
             for (const [key, value] of Object.entries(tag)) {
@@ -341,6 +344,8 @@
         schoolingInfo = '{{ $patient->schooling }}'
         optionSelected(schooling, schoolingInfo)
 
+        // - - -  - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - 
+
         function readPhoto() {
             if (this.files && this.files[0]) {
                 let file = new FileReader()
@@ -355,6 +360,8 @@
         const photo = document.querySelector('#photo')
         photo.addEventListener('change', readPhoto)
 
+        // - - -  - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - 
+
         const actived = document.querySelector('#actived')
 
         actived.addEventListener('change', () => {
@@ -367,6 +374,8 @@
             
             console.log(actived.value)
         })
+
+        // - - -  - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - -
 
         function getAddress() {
 

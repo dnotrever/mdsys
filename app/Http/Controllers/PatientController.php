@@ -105,8 +105,11 @@ class PatientController extends Controller
             'email' => $request->email,
             'notes' => $request->notes,
             'actived' => $actived,
-            'photo' => $imageName,
         ];
+
+        if ($imageName) {
+            $patient_data['photo'] = $imageName;
+        }
 
         Patient::findOrFail($request->id)->update($patient_data);
 
