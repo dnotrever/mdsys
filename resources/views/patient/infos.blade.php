@@ -90,10 +90,10 @@
                                     <div class="form-group w-md">
                                         <label for="gender" class="form-label">Gender</label>
                                         <select id="gender" name="gender" class="form-select">
-                                            <option disabled>Selecione</option>
+                                            <option selected disabled>Selecione</option>
                                             <option value="Feminino">Feminino</option>
                                             <option value="Masculino">Masculino</option>
-                                            <option selected value="Não Informado">Não Informado</option>
+                                            <option value="Não Informado">Não Informado</option>
                                         </select>
                                     </div>
         
